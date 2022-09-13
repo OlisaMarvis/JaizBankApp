@@ -1,0 +1,84 @@
+﻿@model IEnumerable<JaizBank.Application.JaizBank.ViewModel.TransactionsViewModel>
+
+
+@{
+    ViewData["Title"] = "Jaiz Bank";
+}
+
+
+@if (Model.Any())
+{
+
+    @foreach (var items in Model)
+    {
+
+        <div class="container">
+         <div class="logopic">
+             <img src="~/images/JaizBankLogo.png" />
+         </div>
+            <div class="merchant">
+                <h4>**** <span>MERCHANT COPY</span> ****</h4>
+                <ul>
+                    <li>MERCHANT NAME : </li>
+                    <li> @items.MerchantName</li>
+                    <li>LOCATION : </li>
+                    <li>  @items.Location</li>
+                    <li>URT</li>
+                    <li>TERMINAL ID : @items.TerminalID</li>
+                </ul>
+
+            </div>
+            <div class="purchase">
+                <h1>PURCHASE</h1>
+
+                <ul>
+                    <li>STAN: @items.STAN </li>
+                    <li>DATE/TIME: @items.DateTime</li>
+                    <li class="dot">-----------------------------------------------------------</li>
+                    <li>AMOUNT: NGN @items.Amount</li>
+                    <li class="dot">-----------------------------------------------------------</li>
+
+                </ul>
+            </div>
+            <div id="amount">
+                <ul>
+
+                    <li> Debit MasterCard</li>
+                    @*In a live project, a function will be created to hash the debitcardNo*@
+                    <li>DebitCardNo: 539941******3369</li>
+                    <li>369/GLOBAL ACCELEREX</li>
+
+                    <li>EXPIRY DATE: @items.ExpiryDate</li>
+                    <li>AUTHORIZATION CODE: @items.AuthorizationCode</li>
+                    <li> OFFLINE CVM</li>
+                    <li class="dot">-------------------------------------------------------------</li>
+                </ul>
+            </div>
+            <div class="mastercard">
+                <h1>TRANSACTION DECLINED</h1>
+                <ul>
+                    <li>RESPONSE CODE: @items.ResponseCode</li>
+                    <li>Issuer or switch inoperative</li>
+                    <li>AID: @items.AID</li>
+                    <li>RRN: @items.RRN</li>
+                    <li>Accelerex 2.0.0-090921-LINT</li>
+                    <li>PTAD: @items.PTAD</li>
+                    <li class="dot">-------------------------------------------------------------</li>
+                    <li class="dot">-------------------------------------------------------------</li>
+                </ul>
+            </div>
+
+            <div class="footer">
+                <ul>
+                    <li>
+                        <h4>Thanks for using JAIZ BANK POS</h4>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+
+
+    }
+}

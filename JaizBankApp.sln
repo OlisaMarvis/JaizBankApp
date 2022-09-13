@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32630.192
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "JaizBank.Core", "JaizBank.Core", "{0994B73C-C315-4B64-8607-2CE92DC28C28}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "JaizBank.Host", "JaizBank.Host", "{1C6B7330-355F-418F-8330-5D1524270731}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "JaizBank.Infrastructure", "JaizBank.Infrastructure", "{3A5D2E6A-C737-4B3F-969A-3AA55C250183}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JaizBank.Application", "JaizBankApplication\JaizBank.Application.csproj", "{13F8CE00-4357-4936-A367-231737A0D7D6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JaizBankUI", "JaizBankUI\JaizBankUI.csproj", "{4F34035E-852C-40A6-8229-1172BCC620CB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JaizBankPersistence", "JaizBankPersistence\JaizBankPersistence.csproj", "{3D3E4B44-30A4-4223-95F2-A1A601DE5EBF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JaizBank.Domain", "JaizBank.Domain\JaizBank.Domain.csproj", "{C46A4270-5C8E-4F82-8C97-241D3F9BAC51}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{13F8CE00-4357-4936-A367-231737A0D7D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13F8CE00-4357-4936-A367-231737A0D7D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13F8CE00-4357-4936-A367-231737A0D7D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13F8CE00-4357-4936-A367-231737A0D7D6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F34035E-852C-40A6-8229-1172BCC620CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F34035E-852C-40A6-8229-1172BCC620CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F34035E-852C-40A6-8229-1172BCC620CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F34035E-852C-40A6-8229-1172BCC620CB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D3E4B44-30A4-4223-95F2-A1A601DE5EBF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D3E4B44-30A4-4223-95F2-A1A601DE5EBF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D3E4B44-30A4-4223-95F2-A1A601DE5EBF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D3E4B44-30A4-4223-95F2-A1A601DE5EBF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C46A4270-5C8E-4F82-8C97-241D3F9BAC51}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C46A4270-5C8E-4F82-8C97-241D3F9BAC51}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C46A4270-5C8E-4F82-8C97-241D3F9BAC51}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C46A4270-5C8E-4F82-8C97-241D3F9BAC51}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{13F8CE00-4357-4936-A367-231737A0D7D6} = {0994B73C-C315-4B64-8607-2CE92DC28C28}
+		{4F34035E-852C-40A6-8229-1172BCC620CB} = {1C6B7330-355F-418F-8330-5D1524270731}
+		{3D3E4B44-30A4-4223-95F2-A1A601DE5EBF} = {3A5D2E6A-C737-4B3F-969A-3AA55C250183}
+		{C46A4270-5C8E-4F82-8C97-241D3F9BAC51} = {0994B73C-C315-4B64-8607-2CE92DC28C28}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D7836DBD-CAFA-4DAB-BD6B-8943CB2F5541}
+	EndGlobalSection
+EndGlobal
