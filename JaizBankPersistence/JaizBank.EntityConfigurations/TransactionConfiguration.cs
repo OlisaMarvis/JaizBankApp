@@ -29,7 +29,7 @@ namespace JaizBankPersistence.JaizBank.EntityConfigurations
                     DateTime = DateTime.Parse("2022/08/30 13:45:00"),
                     ExpiryDate = "11/24",
                     Amount = 0.01m,
-                    DebitCardNo = "539941******3369",
+                    DebitCardNo = "5399410998873369",
                     AuthorizationCode = "000000",
                     ResponseCode = 91,
                     AID = "A0000000041010",
